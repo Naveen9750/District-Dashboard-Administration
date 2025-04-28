@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taluk Work Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div class="login-header">
+                <h1>Taluk Work Tracker</h1>
+                <p>District Administration Management System</p>
+            </div>
+            <div class="login-form">
+                <h2>Login</h2>
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username">
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password">
+                </div>
+                <div class="input-group">
+                    <label for="role">Role</label>
+                    <select id="role">
+                        <option value="admin">Admin (District Collector)</option>
+                        <option value="supervisor">Supervisor (Taluk Supervisor)</option>
+                        <option value="worker">Worker</option>
+                    </select>
+                </div>
+                <button id="login-btn" class="login-button">Login</button>
+                <div id="error-message" class="error-message"></div>
+                <!-- <div class="demo-info">
+                    <p><strong>Demo Credentials:</strong></p>
+                    <p>Admin: username: admin, password: admin123</p>
+                    <p>Supervisor: username: supervisor1, password: super123</p>
+                    <p>Worker: username: worker1, password: work123</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script src="script.js"></script>
+</body>
+</html>
